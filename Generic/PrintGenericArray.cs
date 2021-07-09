@@ -8,16 +8,31 @@ namespace PrintGenericArray
 {
     class PrintArray
     {
-        //Printing the array using generic type T
-        public static void ToPrintArray<T>(T[] inputArray)
+        public static void ToPrintArray(int[] inputArray)
         {
-            Console.WriteLine("Printing Array");
-            foreach (var i in inputArray)
+            Console.WriteLine("Printing Integer Array");
+            foreach (int i in inputArray)
             {
                 Console.WriteLine(i);
             }
         }
 
+        public static void ToPrintArray(double[] inputArray)
+        {
+            Console.WriteLine("Printing double Array");
+            foreach (double i in inputArray)
+            {
+                Console.WriteLine(i);
+            }
+        }
+        public static void ToPrintArray(char[] inputArray)
+        {
+            Console.WriteLine("Printing character Array");
+            foreach (char i in inputArray)
+            {
+                Console.WriteLine(i);
+            }
+        }
 
         public static void ReadInput()
         {
