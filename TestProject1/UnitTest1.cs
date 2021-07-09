@@ -16,21 +16,25 @@ namespace UnitTest
         [TestMethod]
         public void TestMethod1()
         {
-            int num1, num2, num3, actual, expected;
-            num1 = 45; num2 = 35; num3 = 25;
-            actual = maxOfThree.FindMax(num1, num2, num3);
-            expected = num1;
+            string str1, str2, str3, actual, expected;
+            str1 = "Apple"; str2 = "Peach"; str3 = "Banana";
+            actual = maxOfThree.FindMax(str1, str2, str3);
+            expected = str1;
             expected.CompareTo(actual);
 
-            num1 = 35; num2 = 45; num3 = 25;
-            actual = maxOfThree.FindMax(num1, num2, num3);
-            expected = num2;
+            str1 = "Peach"; str2 = "Apple"; str3 = "Banana";
+            actual = maxOfThree.FindMax(str1, str2, str3);
+            expected = str1;
             expected.CompareTo(actual);
 
-            num1 = 25; num2 = 35; num3 = 45;
-            actual = maxOfThree.FindMax(num1, num2, num3);
-            expected = num1;
+            str1 = "Banana"; str2 = "Peach"; str3 = "Apple";
+            actual = maxOfThree.FindMax(str1, str2, str3);
+            expected = str1;
             expected.CompareTo(actual);
+
+
+
+
         }
     }
 }
